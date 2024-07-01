@@ -16,15 +16,39 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
       />
       <div
         className={`
-          w-[80%] h-screen bg-slate-300
+          w-[70%] h-screen bg-slate-300
           transition-transform duration-300 transform
           ${isOpenMenu ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <ul>
-          <li>About</li>
-          <li>Skills</li>
-          <li>Links</li>
+        <ul className="flex flex-col justify-around items-center h-full">
+          {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+          <li
+            className="text-5xl border-b-4 border-sky-900"
+            onClick={() => setIsOpenMenu(!isOpenMenu)}
+          >
+            <a href="#about" className="block pb-2">
+              About
+            </a>
+          </li>
+          {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+          <li
+            className="text-5xl border-b-4 border-sky-900"
+            onClick={() => setIsOpenMenu(!isOpenMenu)}
+          >
+            <a href="#skill" className="block pb-2">
+              Skill
+            </a>
+          </li>
+          {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
+          <li
+            className="text-5xl border-b-4 border-sky-900"
+            onClick={() => setIsOpenMenu(!isOpenMenu)}
+          >
+            <a href="#links" className="block pb-2">
+              Links
+            </a>
+          </li>
         </ul>
       </div>
     </>
