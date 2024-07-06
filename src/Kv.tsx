@@ -2,7 +2,7 @@ export default function Kv() {
   return (
     <div>
       <img
-        src="/src/img/cat.png"
+        src="./src/img/cat.png"
         alt=""
         className="block w-80 h-80 mx-auto mb-5 rounded-full"
       />
