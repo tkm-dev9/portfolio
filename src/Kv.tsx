@@ -1,10 +1,8 @@
-import KvImg from "./img/cat.png";
-
 export default function Kv() {
   return (
     <div>
       <img
-        src={KvImg}
+        src="/src/img/cat.png"
         alt=""
         className="block w-80 h-80 mx-auto mb-5 rounded-full"
       />
