@@ -5,13 +5,15 @@ import LinksArea from "./LinksArea";
 
 export default function Contents() {
   return (
-    <div className="pt-20">
-      <Kv />
+    <>
+      <div className="pt-20">
+        <Kv />
+      </div>
       <div className="px-5">
         <AboutArea />
         <SkillArea />
         <LinksArea />
       </div>
-    </div>
+    </>
   );
 }
