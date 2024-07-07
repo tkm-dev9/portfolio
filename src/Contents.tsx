@@ -7,9 +7,11 @@ export default function Contents() {
   return (
     <div className="pt-20">
       <Kv />
-      <AboutArea />
-      <SkillArea />
-      <LinksArea />
+      <div className="px-5">
+        <AboutArea />
+        <SkillArea />
+        <LinksArea />
+      </div>
     </div>
   );
 }
