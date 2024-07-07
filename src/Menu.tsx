@@ -22,7 +22,7 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
           ${isOpenMenu ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <ul className="flex flex-col justify-around items-center h-full px-20">
+        <ul className="flex flex-col justify-around items-center h-full px-10">
           <li className="w-full pb-20 border-b-2 border-gray-100">
             <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
               <Link
@@ -49,7 +49,7 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
               </Link>
             </span>
           </li>
-          <li>
+          <li className="w-full">
             <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
               <Link
                 to="links"
