@@ -5,10 +5,10 @@ export default function LinksArea() {
   return (
     <section id="links" className="mb-20">
       <Heading>Links</Heading>
-      <div className="flex gap-4">
+      <div className="flex justify-center flex-wrap gap-4">
         <a
           href="https://github.com/tkm-dev9/"
-          className="flex justify-center items-center gap-4 w-60 p-4 bg-slate-300 cursor-pointer"
+          className="flex justify-between items-center gap-4 w-60 p-4 bg-slate-300 cursor-pointer"
         >
           <img src={`${base}github-logo.png`} alt="" className="w-14" />
           <span className="text-2xl">Github</span>
@@ -16,7 +16,7 @@ export default function LinksArea() {
         </a>
         <a
           href="https://cosen.se/sumikawa-web/"
-          className="flex justify-center items-center gap-4 w-60 p-4 bg-slate-300 cursor-pointer"
+          className="flex justify-between items-center gap-4 w-60 p-4 bg-slate-300 cursor-pointer"
         >
           <img src={`${base}cosense-logo.png`} alt="" className="w-14" />
           <span className="text-2xl">Cosense</span>
@@ -24,7 +24,7 @@ export default function LinksArea() {
         </a>
         <a
           href="https://zenn.dev/tkm99"
-          className="flex justify-center items-center gap-4 w-60 p-4 bg-slate-300 cursor-pointer"
+          className="flex justify-between items-center gap-4 w-60 p-4 bg-slate-300 cursor-pointer"
         >
           <img src={`${base}zenn-logo.svg`} alt="" className="w-14" />
           <span className="text-2xl">Zenn</span>
