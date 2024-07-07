@@ -25,7 +25,7 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
       {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
       <div
         className={`
-          fixed top-0 left-0 w-screen h-screen bg-gray-500 bg-opacity-80 cursor-pointer
+          fixed top-0 left-0 w-screen h-100dvh bg-gray-500 bg-opacity-80 cursor-pointer
           ${isOpenMenu ? "block" : "hidden"}
         `}
         onClick={() => setIsOpenMenu(!isOpenMenu)}

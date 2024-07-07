@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      height: {
+        "100dvh": "100dvh",
+      },
       fontFamily: {
         notosansjp: ["Noto Sans JP", "sans-serif"],
       },
