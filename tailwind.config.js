@@ -3,9 +3,6 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      height: {
-        "fill-available": "-webkit-fill-available",
-      },
       fontFamily: {
         notosansjp: ["Noto Sans JP", "sans-serif"],
       },
