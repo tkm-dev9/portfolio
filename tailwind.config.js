@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        "100dvh": "100dvh",
+        "fill-available": "-webkit-fill-available",
       },
       fontFamily: {
         notosansjp: ["Noto Sans JP", "sans-serif"],
