@@ -1,8 +1,20 @@
 import Menu from "./Menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Hamburger() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  useEffect(() => {
+    if (isOpenMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpenMenu]);
+
   return (
     <>
       <button
