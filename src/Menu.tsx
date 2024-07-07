@@ -17,44 +17,50 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
       />
       <div
         className={`
-          w-[70%] h-screen bg-slate-300
+          w-[70%] h-screen bg-gradient-to-bl from-blue-300 to-blue-100
           transition-transform duration-300 transform
           ${isOpenMenu ? "translate-x-0" : "-translate-x-full"}
         `}
       >
-        <ul className="flex flex-col justify-around items-center h-full">
-          <li className="text-5xl border-b-4 border-sky-900">
-            <Link
-              to="about"
-              offset={-80}
-              smooth={true}
-              className="block pb-2 cursor-pointer"
-              onClick={() => setIsOpenMenu(!isOpenMenu)}
-            >
-              About
-            </Link>
+        <ul className="flex flex-col justify-around items-center h-full px-20">
+          <li className="w-full pb-20 border-b-2 border-gray-100">
+            <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
+              <Link
+                to="about"
+                offset={-80}
+                smooth={true}
+                className="block cursor-pointer"
+                onClick={() => setIsOpenMenu(!isOpenMenu)}
+              >
+                About
+              </Link>
+            </span>
           </li>
-          <li className="text-5xl border-b-4 border-sky-900">
-            <Link
-              to="skill"
-              offset={-80}
-              smooth={true}
-              onClick={() => setIsOpenMenu(!isOpenMenu)}
-              className="block pb-2 cursor-pointer"
-            >
-              Skill
-            </Link>
+          <li className="w-full pb-20 border-b-2 border-gray-100">
+            <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
+              <Link
+                to="skill"
+                offset={-80}
+                smooth={true}
+                onClick={() => setIsOpenMenu(!isOpenMenu)}
+                className="block cursor-pointer"
+              >
+                Skill
+              </Link>
+            </span>
           </li>
-          <li className="text-5xl border-b-4 border-sky-900">
-            <Link
-              to="links"
-              offset={-80}
-              smooth={true}
-              onClick={() => setIsOpenMenu(!isOpenMenu)}
-              className="block pb-2 cursor-pointer"
-            >
-              Links
-            </Link>
+          <li>
+            <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
+              <Link
+                to="links"
+                offset={-80}
+                smooth={true}
+                onClick={() => setIsOpenMenu(!isOpenMenu)}
+                className="block cursor-pointer"
+              >
+                Links
+              </Link>
+            </span>
           </li>
         </ul>
       </div>

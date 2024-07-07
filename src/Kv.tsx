@@ -1,7 +1,7 @@
 export default function Kv() {
   const base = import.meta.env.BASE_URL;
   return (
-    <div>
+    <div className="mb-10">
       <img
         src={`${base}cat.png`}
         alt=""

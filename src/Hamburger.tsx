@@ -19,7 +19,7 @@ export default function Hamburger() {
     <>
       <button
         type="button"
-        className="absolute top-0 right-5 block w-10 h-full cursor-pointer group"
+        className="absolute top-0 right-0 block w-20 h-full px-5 cursor-pointer group"
         onClick={() => setIsOpenMenu(!isOpenMenu)}
       >
         <span className="block w-full h-1 mb-2 bg-black group-hover:mb-1 transition-margin duration-300" />
