@@ -1,10 +1,9 @@
-import KvImg from "./img/cat.png";
-
 export default function Kv() {
+  const base = import.meta.env.BASE_URL;
   return (
     <div>
       <img
-        src={KvImg}
+        src={`${base}cat.png`}
         alt=""
         className="block w-80 h-80 mx-auto mb-5 rounded-full"
       />
