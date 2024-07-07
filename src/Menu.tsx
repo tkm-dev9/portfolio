@@ -4,6 +4,21 @@ type PropsType = {
   setIsOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
+const menuItems = [
+  {
+    text: "About",
+    id: "about",
+  },
+  {
+    text: "Skill",
+    id: "skill",
+  },
+  {
+    text: "Links",
+    id: "links",
+  },
+];
+
 export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
   return (
     <>
@@ -23,45 +38,24 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
         `}
       >
         <ul className="flex flex-col justify-around items-center h-full px-10">
-          <li className="w-full pb-20 border-b-2 border-gray-100">
-            <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
-              <Link
-                to="about"
-                offset={-80}
-                smooth={true}
-                className="block cursor-pointer"
-                onClick={() => setIsOpenMenu(!isOpenMenu)}
-              >
-                About
-              </Link>
-            </span>
-          </li>
-          <li className="w-full pb-20 border-b-2 border-gray-100">
-            <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
-              <Link
-                to="skill"
-                offset={-80}
-                smooth={true}
-                onClick={() => setIsOpenMenu(!isOpenMenu)}
-                className="block cursor-pointer"
-              >
-                Skill
-              </Link>
-            </span>
-          </li>
-          <li className="w-full">
-            <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
-              <Link
-                to="links"
-                offset={-80}
-                smooth={true}
-                onClick={() => setIsOpenMenu(!isOpenMenu)}
-                className="block cursor-pointer"
-              >
-                Links
-              </Link>
-            </span>
-          </li>
+          {menuItems.map((menuItem, index) => (
+            <li
+              className={`w-full pb-20 ${index !== menuItems.length - 1 ? "border-b-2 border-gray-100" : ""}`}
+              key={menuItem.id}
+            >
+              <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
+                <Link
+                  to={menuItem.id}
+                  offset={-80}
+                  smooth={true}
+                  className="block cursor-pointer"
+                  onClick={() => setIsOpenMenu(!isOpenMenu)}
+                >
+                  {menuItem.text}
+                </Link>
+              </span>
+            </li>
+          ))}
         </ul>
       </div>
     </>
