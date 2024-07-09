@@ -18,7 +18,7 @@ export default function LinksArea() {
           href="https://cosen.se/sumikawa-web/"
           className="flex justify-between items-center gap-4 w-60 p-4 bg-slate-300 cursor-pointer"
         >
-          <img src={`${base}cosense-logo.png`} alt="" className="w-14" />
+          <img src={`${base}cosense-logo.svg`} alt="" className="w-14" />
           <span className="text-2xl">Cosense</span>
           <img src={`${base}external_link_icon.png`} alt="" className="w-8" />
         </a>
