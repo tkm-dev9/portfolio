@@ -1,11 +1,13 @@
+import Footer from "Footer";
 import Contents from "./Contents";
 import Header from "./Header";
 
 function App() {
   return (
-    <div className="font-notosansjp">
+    <div id="top" className="font-notosansjp">
       <Header />
       <Contents />
+      <Footer />
     </div>
   );
 }
