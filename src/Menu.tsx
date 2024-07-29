@@ -32,7 +32,7 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
       />
       <div
         className={`
-          w-[70%] h-screen bg-gradient-to-bl from-blue-300 to-blue-100
+          w-[70%] h-screen bg-blue-300
           transition-transform duration-300 transform
           ${isOpenMenu ? "translate-x-0" : "-translate-x-full"}
         `}
@@ -43,7 +43,7 @@ export default function Menu({ isOpenMenu, setIsOpenMenu }: PropsType) {
               className={`w-full pb-20 ${index !== menuItems.length - 1 ? "border-b-2 border-gray-100" : ""}`}
               key={menuItem.id}
             >
-              <span className="block w-40 mx-auto p-2 text-center bg-gradient-to-r from-blue-400 to-blue-100 text-3xl text-white tracking-wider border-4 border-solid border-white">
+              <span className="block w-40 mx-auto p-2 text-center bg-blue-400 text-3xl text-white tracking-wider border-4 border-solid border-white">
                 <Link
                   to={menuItem.id}
                   offset={-80}

@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 export default function Footer() {
   return (
     <footer className="relative w-full h-20 bg-slate-400">
-      <p className="text-center text-white">&copy; 2024 TAKUMU</p>
+      <p className="text-center text-white">&copy; 2024 S.TAKUMU</p>
       <Link
         to="top"
         smooth={true}

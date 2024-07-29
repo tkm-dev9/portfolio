@@ -12,7 +12,7 @@ export default function AboutArea() {
                 生年月日
               </span>
             </th>
-            <td className="w-1/2 h-32">1997年10月11日</td>
+            <td className="w-1/2 h-32">1997年10月11日(26歳)</td>
           </tr>
           <tr className="border-b-2 border-neutral-300">
             <th className="w-1/2 h-32 bg-blue-100 font-normal">
@@ -25,17 +25,18 @@ export default function AboutArea() {
           <tr className="border-b-2 border-neutral-300">
             <th className="w-1/2 h-32 bg-blue-100 font-normal">
               <span className="p-3 bg-slate-50 border-2 border-slate-300 rounded-xl">
-                趣味
+                得意領域
               </span>
             </th>
-            <td className="w-1/2 h-32">
-              <ul className="table mx-auto text-left">
-                <li>アニメを見ること</li>
-                <li>書店に行くこと</li>
-                <li>プログラミングすること</li>
-                <li>運動すること</li>
-              </ul>
-            </td>
+            <td className="w-1/2 h-32">フロントエンド</td>
+          </tr>
+          <tr className="border-b-2 border-neutral-300">
+            <th className="w-1/2 h-32 bg-blue-100 font-normal">
+              <span className="p-3 bg-slate-50 border-2 border-slate-300 rounded-xl">
+                エンジニア歴
+              </span>
+            </th>
+            <td className="w-1/2 h-32">7年(アルバイト含む)</td>
           </tr>
         </tbody>
       </table>

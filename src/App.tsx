@@ -4,7 +4,7 @@ import Header from "./Header";
 
 function App() {
   return (
-    <div id="top" className="font-notosansjp">
+    <div id="top" className="font-notosansjp min-w-80">
       <Header />
       <Contents />
       <Footer />
