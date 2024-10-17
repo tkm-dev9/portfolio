@@ -12,7 +12,7 @@ export default function AboutArea() {
                 生年月日
               </span>
             </th>
-            <td className="w-1/2 h-32">1997年10月11日(26歳)</td>
+            <td className="w-1/2 h-32">1997年10月11日(27歳)</td>
           </tr>
           <tr className="border-b-2 border-neutral-300">
             <th className="w-1/2 h-32 bg-blue-100 font-normal">
